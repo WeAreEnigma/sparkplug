@@ -1596,7 +1596,7 @@ input[type=text]:disabled{
   top: 0px;
   left: 0px;
   content: '';
-  background: rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(180deg, #565656a8 0%, #332525 100%);
   z-index: 2;
 }
 
@@ -1609,9 +1609,9 @@ input[type=text]:disabled{
     left: 50%;
     box-shadow: 0px 2px 236px rgba(0, 0, 0, 0.32);
     border-radius: 17px;
-    background: #fff;
+    background: #fbfbfb;
     text-align: center;
-    border: 2px solid #7b7878;
+/*    border: 2px solid #7b7878;*/
 }
 .pview{
   background: #888888;
