@@ -46,7 +46,7 @@
 .progress-button .content::after  {
 	position: absolute;
 	right: 20px;
-	color: #0e7138;
+	color: #adadad;
 	font-family: "icomoon";
 	opacity: 0;
 	-webkit-transition: opacity 0.3s 0.3s;
@@ -60,7 +60,9 @@
 .progress-button .content::after {
 	content: "\e601"; /* Cross for error */
 }
-
+.colos{
+	background: #da2730;
+}
 .progress-button.state-success .content::before,
 .progress-button.state-error .content::after {
 	opacity: 1;
@@ -80,7 +82,7 @@
 .progress-button .progress-inner {
 	position: absolute;
     left: 0;
-    background: #088fbb;
+    background: #adadad;
 }
 
 .progress-button[data-horizontal] .progress-inner {
