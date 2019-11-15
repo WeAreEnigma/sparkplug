@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>CertVault</title>
+  <meta name="author" content="CertVault">
+  <meta name="description" content="CertVault">
+  <meta name="keywords" content="creative, works, showcase, portfolio, highlight, projects, parallax, agency, digital, studio, css, animation, transition, svg, html, css">
+  <!-- FAVICON FILES -->
+      <!--       <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+         <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+         <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+         <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon"> -->
+         <link href="images/icons/favicon.png" rel="shortcut icon">
+         <!-- CSS FILES -->
+         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.material.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
+         <link rel="stylesheet" type="text/css" href="css/material.min.css">
+         <link rel="stylesheet" type="text/css" href="css/component.css" />
+         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+         <!--Import materialize.css-->
+         <link href="css/materialize.css" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet">
+         <script src="js/modernizr.custom.js"></script>
+         <!-- Font Awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!-- Font Awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!-- ------------------------------------------------------------------ -->
+         <style type="text/css">
+           input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+             border-bottom: 2px solid #bf1124;
+             box-shadow: none;
+             background: none;
+           }
+           .form-group{
+             margin-bottom: 0px;
+           }
+           .pp{
+             padding: 2px;
+           }
+           .pr img{
+            display: inline-block;
+            background: #d9d9d9;
+            height: 2.5rem;
+            vertical-align: middle;
+            margin-right: 0rem;
+            margin: .5rem 0.25rem 0.5rem 0.5rem;
+            border-radius: 50%;
+          }
+          .actn span{
+            font-size: 1em;
+            font-weight: 500;
+            margin-right: 33px;
+          }
+          .actn span svg{
+            margin-right: 3px;
+          }
+          #forma{
+            margin: auto;
+            width: 170px;
+          }
+          #forma input{
+            width: 101px !important;
+          }
+    /*.emailr-f select{
+     display: block !important;
+    outline: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid #cecece !important;
+    height: 40px !important;
+    border-radius: 0px !important;
+    margin: 0 0 45px 0 !important;
+    }*/
+    .custom-select{
+      top: 27%;
+    }
+
+    .hello {
+      font-size: 14px;
+    }
+
+    .actn a{
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      margin-left: 8px;
+      float: left;
+    }
+
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 7px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      height: 25px !important;
+      width: 50px !important;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      left: 3px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #13c763;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(23px);
+      -ms-transform: translateX(23px);
+      transform: translateX(23px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+    .toogle{
+      text-align:start;
+    }
+    .right-t h5 {
+      font-size: 1.2rem;
+      color: #5f5e5e;
+      margin-left: 12px;
+      text-align: justify;
+    }
+    .not{
+      margin: 0px;
+      margin-top: 20px;
+    }
+    #dlte-main .progress-button {
+      position: relative;
+      display: inline-block;
+      padding: 0px 62px;
+      outline: none;
+      border: none;
+      background: #1d9650;
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 1em;
+      line-height: 3.2;
+    }
+  </style>
+</head>
+<body>
+  <!-- end preloader -->
+  <div class="transition-overlay"></div>
+  <!-- end transition-overlay -->
+  <div class="wrapper">
+    <aside class="hamburger-menu-box">
+     <div class="menu">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="user.html" class="nav-link">Users</a></li>
+           <li class="nav-item"><a href="index.html" class="nav-link">Certificates</a></li>
+           <li class="nav-item"><a href="upload.html" class="nav-link">Upload Cert</a></li>
+           <li class="nav-item"><a href="exception.html" class="nav-link">Exception</a></li>
+           <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+           <li class="nav-item"><a href="companies.html" class="nav-link"> Companies</a></li>
+           <li class="nav-item"> <a href="paperregistration.html" class="nav-link">Paper Registration</a> </li>
+        </ul>
+      <!-- end navbar-nav --> 
+    </div>
+    <!--end menu -->
+  </aside>
+  <!-- end hamburger-menu-box -->
+  <!-- end video-bg -->
+  <nav class="navbar">
+   <div class="logo"> <a href="index.html" class=""> <img src="images/logo.svg" alt="Image" class="logo-light"> <img src="images/logo.svg" alt="Image" class="logo-colored"></a> </div>
+   <!-- end logo -->
+   <div class="hamburger-menu"> <span></span> <span></span> <span></span></div>
+   <!-- hamburger-menu -->
+   <!-- <div class="search-btn"></div> -->
+   <!-- end search-btn --> 
+   <!-- <a href="index.html" class="custom-btn">Bespin<sub>LABS</sub></a> -->
+   <ul class="navbar-nav">
+    <li class="nav-item"><a href="user.html" class="nav-link">Users</a></li>
+   <li class="nav-item"><a href="index.html" class="nav-link">Certificates</a></li>
+   <li class="nav-item"><a href="upload.html" class="nav-link">Upload Cert</a></li>
+   <li class="nav-item"><a href="exception.html" class="nav-link">Exception</a></li>
+   <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+   <li class="nav-item"><a href="companies.html" class="nav-link"> Companies</a></li>
+   <li class="nav-item"> <a href="paperregistration.html" class="nav-link">Paper Registration</a> </li>
+</ul>
+   <!-- end navbar-nav --> 
+   <div class="half">
+    <label for="profile2" class="profile-dropdown">
+      <input type="checkbox" id="profile2">
+      <img src="https://cdn0.iconfinder.com/data/icons/avatars-3/512/avatar_hipster_guy-512.png">
+      <span>Hi, Sean</span>
+      <label for="profile2"><i class="fa fa-angle-down" aria-hidden="true"></i></label>
+      <ul>
+        <li><a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a></li>
+        
+        <!-- <li><a href="#"><i class="mdi mdi-settings"></i>Settings</a></li> -->
+        <li style="border-top: 1px solid #e2e2e2;"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+      </ul>
+    </label>
+  </div>
+</nav>
+<!-- end navbar -->
+<!-- end header -->
+<section class="user-s">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 col-12 Upload-t">
+       <h6>User List</h6>
+       <hr>
+     </div>
+   </div>
+   <div class="row">
+        <div class="col-md-6 three-bt" style="text-align: start; margin-top: 0vh;">
+                <button class="btnn1 btnn"><span><img class="hovers" src="images/icons/paper-registration-c.png"><img class="hoverf" src="images/icons/paper-registration.png"></span><a href="#" class="nav-link" id="Paper">Paper Registration</a></button>
+              </div>
+    <div class="col col-md-6 col-sm-6 col-xs-6 col-6 clear-all">
+        <h6><a href=""><i class="fa fa-filter" aria-hidden="true"></i>CLEAR ALL</a> </h6>
+      </div>
+ </div>
+ </section>
+ <!-- =================================Section-pints===================================== -->
+ <section class="points-s">
+   <div class="container-fluid">
+     <table id="example" class="mdl-data-table table-striped table-bordered table-responsive table-CertuploadStyles" style="width:100%">
+      <thead>
+       <tr class="thtr">
+        <th class="">Select User/Row</th>
+        <th class="">Account</th>
+        <th class="">Company</th>
+        <th class=""> Type</th>
+        <th class="">Add Date</th>
+        <th class="">Letters Sent</th>
+        <th class=""> Total Mail Sent</th>
+      </tr>
+    </thead>
+
+    <tfoot>
+     <tr>
+      <td></td>
+      <td><input class="form-control mainLoginInput" placeholder="&#61442;" name="srch-term" id="srch-term" type="text"></td>
+      <td><input class="form-control mainLoginInput" placeholder="&#61442;" name="srch-term" id="srch-term" type="text"></td>
+      <td><label class="custom-select">
+            <select>
+                <option disabled="" selected=""></option>
+                <option value="Option 1">Unregistered </option>
+                <option value="Option 2">Registered </option>
+            </select>
+        </label></td>
+      <td><form id="forma" name="form" class="form-inline">
+            <div class="form-group s">
+              <input class="mainLoginInput" id="startDate" name="startDate" type="text" class="form-control" placeholder="&#xf073; From" />
+              &nbsp;
+              <input class="mainLoginInput" id="endDate" name="endDate" type="text" class="form-control" placeholder="&#xf073; To" />
+            </div>
+          </form></td>
+      <td><label class="custom-select">
+            <select>
+                <option disabled="" selected=""></option>
+                <option value="Option 1">Unregistered </option>
+                <option value="Option 2">Registered </option>
+            </select>
+        </label></td>
+      
+      <td></td>
+    </tr></tfoot>
+    <tbody>
+     <tr>
+       <td class="pr"><div class="checkbox">
+            <label>
+              <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span>
+            </label>
+          </div></td>
+       <td>Chase</td>
+       <td>mount@p..</td>
+       <td>2019-04-25</td>
+       <td>2019-04-28</td>
+       <td>2019-04-20</td>
+       <td class="actn">2</td>
+    </tr>
+    <tr>
+     <td class="pr"><div class="checkbox">
+            <label>
+              <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> 
+            </label>
+          </div></td>
+     <td>Chase</td>
+     <td>mount@p..</td>
+     <td>2019-04-25</td>
+     <td>2019-04-28</td>
+     <td>2019-04-20</td>
+     <td class="actn">1
+      </td>
+  </tr>
+</tbody>
+            <!--  <tfoot>
+               <tr>
+                   <th>Name</th>
+                   <th>Position</th>
+                   <th>Office</th>
+                   <th>Age</th>
+                   <th>Start date</th>
+                   <th>Salary</th>
+               </tr>
+             </tfoot> -->
+           </table>
+         
+        </section>
+        <div class="popup-wrap" id="emailr-main">
+          <div class="popup-box" id="em">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="emailr-f">
+                 <div class="row" style="margin: 5vh 0px;">
+                 </div>
+                 <div class="row">
+                  <div class="col-md-12">
+                    <div class="emailr-f">
+                      <div class="row">
+                        <div class="col-md-6 md">
+                          <input class="effect-1" type="text" placeholder="Name">
+                          <span class="focus-border"></span>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="custom-select">
+                            <select>
+                              <option  selected>Role </option>
+                              <option value="Option 1">Unregistered </option>
+                              <option value="Option 2">Registered </option>
+                            </select>
+                          </label>
+
+                        </div>
+                        <div class="col-md-6 md">
+                          <label class="custom-select">
+                            <select>
+                              <option selected>Company Type</option>
+                              <option value="Option 1">Unregistered </option>
+                              <option value="Option 2">Registered </option>
+                            </select>
+                          </label>
+
+                        </div>
+                        <div class="col-md-6 md" >
+                          <label class="custom-select">
+                            <select>
+                              <option  selected>Company Name</option>
+                              <option value="Option 1">Unregistered </option>
+                              <option value="Option 2">Registered </option>
+                            </select>
+                          </label>
+
+                        </div>
+                        <div class="col-md-6" >
+                          <input class="effect-1" type="email" placeholder="Email address">
+                          <span class="focus-border"></span>
+                        </div>
+                        <div class="col-md-6" >
+                          <input class="effect-1" type="password" placeholder="Password">
+                          <span class="focus-border"></span>
+                        </div>
+                        <div class="row not">
+                          <div class="col-md-6 col-6 right-t">
+                            <h5>Notification</h5>
+                          </div>
+                          <div class="col-md-6 col-6 left-t toogle">
+                            <label class="switch">
+                              <input type="checkbox" checked="">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div> 
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <a class="close-btn popup-close" href="#">x</a>
+            <div class="row" >
+                   <!-- <div class="col-md-6" style="text-align: end;">
+                 <button class="pview popup-close">Close</button>
+               </div> -->
+               <div class="col-md-12" style="text-align: center;">
+
+                <button class="progress-button" data-style="fill" data-horizontal><i class="fa fa-bookmark-o" aria-hidden="true"></i> Save</button>
+                <!-- <button class="p0k popup-close">Upload</button> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+</div>
+        <div class="popup-wrap" id="paper-main">
+          <div class="popup-box" id="ap">
+            <div class="row" style="margin: 5vh 0px;">
+              <div class="col-md-12">
+                <img src="images/popup/paperr.gif">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>Are you sure to generate 
+                  registration letter?
+                </p>
+              </div>
+            </div>
+            
+            <a class="close-btn popup-close" href="#">x</a>
+            <div class="row" >
+             <div class="col-md-6 close-b">
+               <button class="pview popup-close colos">Cancel</button>
+             </div>
+             <div class="col-md-6 delete-b">
+
+              <button class="progress-button" data-style="fill" data-horizontal><i class="fa fa-bookmark-o" aria-hidden="true"></i> Save</button>
+              <!-- <button class="p0k popup-close">Upload</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-wrap" id="dlte-main">
+        <div class="popup-box" id="ap">
+          <div class="row" style="margin: 5vh 0px;">
+            <div class="col-md-12">
+              <img src="images/popup/notifi.gif">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Are you sure you want to disable the user?
+              </p>
+            </div>
+          </div>
+
+          <a class="close-btn popup-close" href="#">x</a>
+          <div class="row" >
+           <div class="col-md-6 close-b">
+             <button class="pview popup-close colos">Cancel</button>
+           </div>
+           <div class="col-md-6 delete-b">
+
+            <button class="progress-button" data-style="fill" data-horizontal>Ok</button>
+            <!-- <button class="p0k popup-close">Upload</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="popup-wrap" id="edit-main">
+      <div class="popup-box" id="em">
+        <div class="row" style="margin: 5vh 0px;">
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="emailr-f">
+              <div class="row">
+                <div class="col-md-6 md">
+                  <input class="effect-1" type="text" placeholder="Name">
+                  <span class="focus-border"></span>
+                </div>
+                <div class="col-md-6">
+                  <label class="custom-select">
+                    <select>
+                      <option  selected>Role </option>
+                      <option value="Option 1">Unregistered </option>
+                      <option value="Option 2">Registered </option>
+                    </select>
+                  </label>
+
+                </div>
+                <div class="col-md-6 md">
+                  <label class="custom-select">
+                    <select>
+                      <option selected>Company Type</option>
+                      <option value="Option 1">Unregistered </option>
+                      <option value="Option 2">Registered </option>
+                    </select>
+                  </label>
+
+                </div>
+                <div class="col-md-6 md" >
+                  <label class="custom-select">
+                    <select>
+                      <option  selected>Company Name</option>
+                      <option value="Option 1">Unregistered </option>
+                      <option value="Option 2">Registered </option>
+                    </select>
+                  </label>
+
+                </div>
+                <div class="col-md-6" >
+                  <input class="effect-1" type="email" placeholder="Email address">
+                  <span class="focus-border"></span>
+                </div>
+                <div class="col-md-6" >
+                  <input class="effect-1" type="password" placeholder="Password">
+                  <span class="focus-border"></span>
+                </div>
+                <div class="row not">
+                  <div class="col-md-6 right-t">
+                    <h5>Notification</h5>
+                  </div>
+                  <div class="col-md-6 left-t toogle">
+                    <label class="switch">
+                      <input type="checkbox" checked="">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div> 
+
+            </div>
+          </div>
+        </div>
+
+        <a class="close-btn popup-close" href="#">x</a>
+        <div class="row" >
+                   <!-- <div class="col-md-6" style="text-align: end;">
+                 <button class="pview popup-close">Close</button>
+               </div> -->
+               <div class="col-md-12" style="text-align: center;">
+
+                <button class="progress-button" data-style="fill" data-horizontal><i class="fa fa-bookmark-o" aria-hidden="true"></i> Save</button>
+                <!-- <button class="p0k popup-close">Upload</button> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ===============================Ends Section================================= -->
+        <!-- JS FILES --> 
+        <!--       <srcipt src="https://code.jquery.com/jquery-3.3.1.js"></srcipt> -->
+        <script src="js/jquery.min.js"></script> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.material.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.js"></script>
+        <script src="js/pop.js"></script>
+        <script>
+         AOS.init();
+         // AOS.refresh();
+       </script>
+       <script>
+         // PRELOADER
+         (function($) {
+          $(window).load(function(){
+            $("body").addClass("page-loaded");  
+          });
+        })(jQuery)
+      </script> 
+      <script>
+       $(document).ready( function () {
+         $('#myTable').DataTable();
+       } );
+     </script>
+     <script src="js/bootstrap.min.js"></script> 
+     <script src="js/main.js"></script>
+     <script type="text/javascript">
+       (function(window, document, undefined) {
+
+         var factory = function($, DataTable) {
+           "use strict";
+
+           $('.search-toggle').click(function() {
+             if ($('.hiddensearch').css('display') == 'none')
+               $('.hiddensearch').slideDown();
+             else
+               $('.hiddensearch').slideUp();
+           });
+
+           /* Set the defaults for DataTables initialisation */
+           $.extend(true, DataTable.defaults, {
+             dom: "<'hiddensearch'f'>" +
+             "tr" +
+             "<'table-footer'lip'>",
+             renderer: 'material'
+           });
+
+           /* Default class modification */
+           $.extend(DataTable.ext.classes, {
+             sWrapper: "dataTables_wrapper",
+             sFilterInput: "form-control input-sm",
+             sLengthSelect: "form-control input-sm"
+           });
+
+           /* Bootstrap paging button renderer */
+           DataTable.ext.renderer.pageButton.material = function(settings, host, idx, buttons, page, pages) {
+             var api = new DataTable.Api(settings);
+             var classes = settings.oClasses;
+             var lang = settings.oLanguage.oPaginate;
+             var btnDisplay, btnClass, counter = 0;
+
+             var attach = function(container, buttons) {
+               var i, ien, node, button;
+               var clickHandler = function(e) {
+                 e.preventDefault();
+                 if (!$(e.currentTarget).hasClass('disabled')) {
+                   api.page(e.data.action).draw(false);
+                 }
+               };
+
+               for (i = 0, ien = buttons.length; i < ien; i++) {
+                 button = buttons[i];
+
+                 if ($.isArray(button)) {
+                   attach(container, button);
+                 } else {
+                   btnDisplay = '';
+                   btnClass = '';
+
+                   switch (button) {
+
+                     case 'first':
+                     btnDisplay = lang.sFirst;
+                     btnClass = button + (page > 0 ?
+                       '' : ' disabled');
+                     break;
+
+                     case 'previous':
+                     btnDisplay = '<i class="material-icons">chevron_left</i>';
+                     btnClass = button + (page > 0 ?
+                       '' : ' disabled');
+                     break;
+
+                     case 'next':
+                     btnDisplay = '<i class="material-icons">chevron_right</i>';
+                     btnClass = button + (page < pages - 1 ?
+                       '' : ' disabled');
+                     break;
+
+                     case 'last':
+                     btnDisplay = lang.sLast;
+                     btnClass = button + (page < pages - 1 ?
+                       '' : ' disabled');
+                     break;
+
+                   }
+
+                   if (btnDisplay) {
+                     node = $('<li>', {
+                       'class': classes.sPageButton + ' ' + btnClass,
+                       'id': idx === 0 && typeof button === 'string' ?
+                       settings.sTableId + '_' + button : null
+                     })
+                     .append($('<a>', {
+                       'href': '#',
+                       'aria-controls': settings.sTableId,
+                       'data-dt-idx': counter,
+                       'tabindex': settings.iTabIndex
+                     })
+                     .html(btnDisplay)
+                     )
+                     .appendTo(container);
+
+                     settings.oApi._fnBindAction(
+                       node, {
+                         action: button
+                       }, clickHandler
+                       );
+
+                     counter++;
+                   }
+                 }
+               }
+             };
+
+         // IE9 throws an 'unknown error' if document.activeElement is used
+         // inside an iframe or frame. 
+         var activeEl;
+         
+         try {
+         // Because this approach is destroying and recreating the paging
+         // elements, focus is lost on the select button which is bad for
+         // accessibility. So we want to restore focus once the draw has
+         // completed
+         activeEl = $(document.activeElement).data('dt-idx');
+       } catch (e) {}
+
+       attach(
+         $(host).empty().html('<ul class="material-pagination"/>').children('ul'),
+         buttons
+         );
+
+       if (activeEl) {
+         $(host).find('[data-dt-idx=' + activeEl + ']').focus();
+       }
+     };
+
+         /*
+         * TableTools Bootstrap compatibility
+         * Required TableTools 2.1+
+         */
+         if (DataTable.TableTools) {
+         // Set the classes that TableTools uses to something suitable for Bootstrap
+         $.extend(true, DataTable.TableTools.classes, {
+           "container": "DTTT btn-group",
+           "buttons": {
+             "normal": "btn btn-default",
+             "disabled": "disabled"
+           },
+           "collection": {
+             "container": "DTTT_dropdown dropdown-menu",
+             "buttons": {
+               "normal": "",
+               "disabled": "disabled"
+             }
+           },
+           "print": {
+             "info": "DTTT_print_info"
+           },
+           "select": {
+             "row": "active"
+           }
+         });
+         
+         // Have the collection use a material compatible drop down
+         $.extend(true, DataTable.TableTools.DEFAULTS.oTags, {
+           "collection": {
+             "container": "ul",
+             "button": "li",
+             "liner": "a"
+           }
+         });
+       }
+
+         }; // /factory
+         
+         // Define as an AMD module if possible
+         if (typeof define === 'function' && define.amd) {
+           define(['jquery', 'datatables'], factory);
+         } else if (typeof exports === 'object') {
+         // Node/CommonJS
+         factory(require('jquery'), require('datatables'));
+       } else if (jQuery) {
+         // Otherwise simply initialise as normal, stopping multiple evaluation
+         factory(jQuery, jQuery.fn.dataTable);
+       }
+
+     })(window, document);
+
+     $(document).ready(function() {
+       $('#example').dataTable({
+         "oLanguage": {
+           "sStripClasses": "",
+           "sSearch": "",
+           "sSearchPlaceholder": "Enter Keywords Here",
+           "sInfo": "_START_ -_END_ of _TOTAL_",
+           "sLengthMenu": '<span>Rows per page:</span><select class="browser-default">' +
+           '<option value="10">10</option>' +
+           '<option value="20">20</option>' +
+           '<option value="30">30</option>' +
+           '<option value="40">40</option>' +
+           '<option value="50">50</option>' +
+           '<option value="-1">All</option>' +
+           '</select></div>'
+         },
+         bAutoWidth: false
+       });
+     });
+         //         $(document).ready(function() {
+         //     $('#example').DataTable( {
+         //         columnDefs: [
+         //             {
+         //                 targets: [ 0, 1, 2 ],
+         //                 className: 'mdl-data-table__cell--non-numeric'
+         //             }
+         //         ],
+         //         responsive: true
+         //     } );
+         // } );
+       </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
+       <script type="text/javascript">
+        var bindDateRangeValidation = function (f, s, e) {
+          if(!(f instanceof jQuery)){
+            console.log("Not passing a jQuery object");
+          }
+
+          var jqForm = f,
+          startDateId = s,
+          endDateId = e;
+
+          var checkDateRange = function (startDate, endDate) {
+            var isValid = (startDate != "" && endDate != "") ? startDate <= endDate : true;
+            return isValid;
+          }
+
+          var bindValidator = function () {
+            var bstpValidate = jqForm.data('bootstrapValidator');
+            var validateFields = {
+              startDate: {
+                validators: {
+                  notEmpty: { message: 'This field is required.' },
+                  callback: {
+                    message: 'Start Date must less than or equal to End Date.',
+                    callback: function (startDate, validator, $field) {
+                      return checkDateRange(startDate, $('#' + endDateId).val())
+                    }
+                  }
+                }
+              },
+              endDate: {
+                validators: {
+                  notEmpty: { message: 'This field is required.' },
+                  callback: {
+                    message: 'End Date must greater than or equal to Start Date.',
+                    callback: function (endDate, validator, $field) {
+                      return checkDateRange($('#' + startDateId).val(), endDate);
+                    }
+                  }
+                }
+              },
+              customize: {
+                validators: {
+                  customize: { message: 'customize.' }
+                }
+              }
+            }
+            if (!bstpValidate) {
+              jqForm.bootstrapValidator({
+                excluded: [':disabled'], 
+              })
+            }
+
+            jqForm.bootstrapValidator('addField', startDateId, validateFields.startDate);
+            jqForm.bootstrapValidator('addField', endDateId, validateFields.endDate);
+
+          };
+
+          var hookValidatorEvt = function () {
+            var dateBlur = function (e, bundleDateId, action) {
+              jqForm.bootstrapValidator('revalidateField', e.target.id);
+            }
+
+            $('#' + startDateId).on("dp.change dp.update blur", function (e) {
+              $('#' + endDateId).data("DateTimePicker").setMinDate(e.date);
+              dateBlur(e, endDateId);
+            });
+
+            $('#' + endDateId).on("dp.change dp.update blur", function (e) {
+              $('#' + startDateId).data("DateTimePicker").setMaxDate(e.date);
+              dateBlur(e, startDateId);
+            });
+          }
+
+          bindValidator();
+          hookValidatorEvt();
+        };
+
+
+        $(function () {
+          var sd = new Date(), ed = new Date();
+
+          $('#startDate').datetimepicker({ 
+            pickTime: false, 
+            format: "YYYY/MM/DD", 
+            maxDate: ed 
+          });
+
+          $('#endDate').datetimepicker({ 
+            pickTime: false, 
+            format: "YYYY/MM/DD", 
+            minDate: sd 
+          });
+
+
+
+    //passing 1.jquery form object, 2.start date dom Id, 3.end date dom Id
+    bindDateRangeValidation($("#form"), 'startDate', 'endDate');
+  });
+</script>
+
+      <!-- <script>
+         // ------------------------------
+         // https://twitter.com/mattsince87
+         // ------------------------------
+         
+         function scrollNav() {
+         $('.navbar a').click(function(){  
+         //Toggle Class
+         $(".active").removeClass("active");      
+         $(this).closest('li').addClass("active");
+         var theClass = $(this).attr("class");
+         $('.'+theClass).parent('li').addClass('active');
+         //Animate
+         $('html, body').stop().animate({
+           scrollTop: $( $(this).attr('href') ).offset().top - 100
+         }, 1000);
+         return false;
+         });
+         $('.scrollTop a').scrollTop();
+         }
+         scrollNav();
+       </script> -->
+       <script >
+         window.onbeforeunload = function() {window.scrollTo(0,0);}
+       </script>
+     </div>
+   </body>
+   </html>
